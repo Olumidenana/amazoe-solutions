@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazoe Solutions · Business Systems, Automation & Software Consultancy | Osogbo, Osun State</title>
+  <meta name="description" content="Amazoe Solutions is a premier business systems and software consultancy in Osogbo, Osun State, Nigeria. We engineer WhatsApp AI automations, custom software, algorithmic systems, and business workflows. Any solution. Any problem.">
+  <meta name="keywords" content="Amazoe Solutions, Software Developer Osogbo, Business Automation Osun State, WhatsApp AI Nigeria, Web Development Osogbo, IT Consultant Osun State">
+  
+  <!-- Open Graph / Meta for Social & Google -->
+  <meta property="og:title" content="Amazoe Solutions · Business Systems & Software Consultancy">
+  <meta property="og:description" content="Any solution. Any problem. High-performance software engineering, WhatsApp AI automation, and business systems in Osogbo, Osun State.">
+  <meta property="og:image" content="amazoe-logo-banner.png">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" href="amazoe-logo-icon.png" type="image/png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --dark-green: #0C332C;
+      --dark-green-hover: #07221D;
+      --gold: #C9A24D;
+      --gold-light: #F8E8C8;
+      --leaf-green: #6CC24A;
+      --leaf-green-soft: rgba(108, 194, 74, 0.12);
+      --surface-light: #F8FAF9;
+      --card-border: #E2ECE7;
+      --text-main: #14221D;
+      --text-muted: #53645D;
+      --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      color: var(--text-main);
+      background-color: #FFFFFF;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Container */
+    .container {
+      width: 100%;
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Top Announcement Bar */
+    .top-bar {
+      background: var(--dark-green);
+      color: #FFFFFF;
+      font-size: 13px;
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(201, 162, 77, 0.3);
+    }
+    .top-bar-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .top-bar-left {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .top-pill {
+      background: rgba(201, 162, 77, 0.2);
+      color: var(--gold);
+      padding: 2px 8px;
+      border-radius: 99px;
+      font-weight: 700;
+      font-size: 11px;
+      border: 1px solid rgba(201, 162, 77, 0.4);
+    }
+    .top-bar-right {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .top-bar a {
+      color: #FFFFFF;
+      text-decoration: none;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      transition: color 0.2s;
+    }
+    .top-bar a:hover {
+      color: var(--gold);
+    }
+
+    /* Navigation */
+    header.site-header {
+      position: sticky;
+      top: 0;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(12px);
+      z-index: 1000;
+      border-bottom: 1px solid var(--card-border);
+      box-shadow: 0 2px 10px rgba(12, 51, 44, 0.04);
+    }
+    .nav-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 72px;
+    }
+    .brand-link {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+    .brand-logo-img {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--gold);
+      background: var(--dark-green);
+      padding: 1px;
+    }
+    .brand-text-col {
+      display: flex;
+      flex-direction: column;
+    }
+    .brand-name {
+      font-size: 18px;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      color: var(--dark-green);
+      line-height: 1.1;
+    }
+    .brand-name span {
+      color: var(--gold);
+    }
+    .brand-tagline {
+      font-size: 11px;
+      font-style: italic;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      list-style: none;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text-main);
+      font-size: 14px;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover {
+      color: var(--dark-green);
+    }
+
+    .btn-header-wa {
+      background: var(--dark-green);
+      color: #FFFFFF;
+      padding: 9px 18px;
+      border-radius: 8px;
+      font-size: 13.5px;
+      font-weight: 700;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid var(--gold);
+      transition: all 0.2s;
+    }
+    .btn-header-wa:hover {
+      background: var(--gold);
+      color: var(--dark-green);
+      transform: translateY(-1px);
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(180deg, #F4F8F6 0%, #FFFFFF 100%);
+      padding: 64px 0 54px;
+      border-bottom: 1px solid var(--card-border);
+    }
+    .hero-content {
+      max-width: 860px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .badge-location {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--leaf-green-soft);
+      border: 1px solid rgba(108, 194, 74, 0.3);
+      color: var(--dark-green);
+      font-size: 12.5px;
+      font-weight: 700;
+      padding: 4px 14px;
+      border-radius: 99px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .hero-title {
+      font-size: 42px;
+      font-weight: 800;
+      line-height: 1.2;
+      color: var(--dark-green);
+      margin-bottom: 18px;
+      letter-spacing: -0.02em;
+    }
+    .hero-title span {
+      color: var(--gold);
+    }
+    .hero-title em {
+      font-style: normal;
+      color: var(--leaf-green);
+    }
+    .hero-desc {
+      font-size: 18px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 32px;
+    }
+    .hero-actions {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 36px;
+    }
+    .btn-primary-wa {
+      background: #25D366;
+      color: #000000;
+      font-weight: 800;
+      padding: 14px 26px;
+      border-radius: 9px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 15px;
+      box-shadow: 0 4px 14px rgba(37, 211, 102, 0.3);
+      transition: all 0.2s ease;
+    }
+    .btn-primary-wa:hover {
+      background: #1EBE5D;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+    }
+    .btn-secondary {
+      background: var(--dark-green);
+      color: #FFFFFF;
+      font-weight: 700;
+      padding: 14px 24px;
+      border-radius: 9px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 15px;
+      border: 1px solid var(--gold);
+      transition: all 0.2s ease;
+    }
+    .btn-secondary:hover {
+      background: var(--gold);
+      color: var(--dark-green);
+      transform: translateY(-2px);
+    }
+    .btn-call {
+      background: #FFFFFF;
+      color: var(--dark-green);
+      font-weight: 700;
+      padding: 14px 22px;
+      border-radius: 9px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 15px;
+      border: 1.5px solid var(--card-border);
+      transition: all 0.2s ease;
+    }
+    .btn-call:hover {
+      border-color: var(--dark-green);
+      background: var(--surface-light);
+    }
+
+    .trust-badges {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+      flex-wrap: wrap;
+      padding-top: 20px;
+      border-top: 1px solid rgba(12, 51, 44, 0.08);
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .trust-item span.icon {
+      color: var(--leaf-green);
+      font-size: 16px;
+    }
+
+    /* Section Header */
+    .section-header {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 48px;
+    }
+    .section-tag {
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--gold);
+      margin-bottom: 8px;
+      display: block;
+    }
+    .section-title {
+      font-size: 32px;
+      font-weight: 800;
+      color: var(--dark-green);
+      line-height: 1.25;
+      margin-bottom: 12px;
+    }
+    .section-desc {
+      font-size: 16px;
+      color: var(--text-muted);
+    }
+
+    /* Services Section */
+    .services-section {
+      padding: 72px 0;
+      background: #FFFFFF;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+    }
+    .service-card {
+      background: var(--surface-light);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 32px 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      transition: all 0.25s ease;
+      position: relative;
+    }
+    .service-card:hover {
+      border-color: var(--gold);
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px rgba(12, 51, 44, 0.08);
+    }
+    .service-icon-box {
+      width: 52px;
+      height: 52px;
+      border-radius: 10px;
+      background: var(--dark-green);
+      color: var(--gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      border: 1px solid var(--gold);
+    }
+    .service-card h3 {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--dark-green);
+      line-height: 1.3;
+    }
+    .service-card p {
+      font-size: 14.5px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+    .service-points {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+      margin-top: 6px;
+    }
+    .service-points li {
+      font-size: 13.5px;
+      color: var(--text-main);
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+    .service-points li::before {
+      content: "✔";
+      color: var(--leaf-green);
+      font-weight: 800;
+      font-size: 13px;
+    }
+    .card-cta-link {
+      margin-top: auto;
+      padding-top: 14px;
+      border-top: 1px solid rgba(12, 51, 44, 0.08);
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--dark-green);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: color 0.2s;
+    }
+    .card-cta-link:hover {
+      color: var(--gold);
+    }
+
+    /* Portfolio & Proof of Work Section */
+    .portfolio-section {
+      padding: 72px 0;
+      background: var(--surface-light);
+      border-top: 1px solid var(--card-border);
+      border-bottom: 1px solid var(--card-border);
+    }
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+    }
+    .portfolio-card {
+      background: #FFFFFF;
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 28px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .portfolio-tag {
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 3px 10px;
+      border-radius: 99px;
+      align-self: flex-start;
+    }
+    .tag-flagship {
+      background: #FDF4E5;
+      color: #9A6F1C;
+      border: 1px solid #ECCB8E;
+    }
+    .tag-saas {
+      background: #EBF8EE;
+      color: #24813C;
+      border: 1px solid #B6E5C2;
+    }
+    .tag-ops {
+      background: #EBF3FC;
+      color: #1E5BA8;
+      border: 1px solid #B4D5F8;
+    }
+    .portfolio-card h3 {
+      font-size: 19px;
+      font-weight: 800;
+      color: var(--dark-green);
+    }
+    .portfolio-card p {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.55;
+    }
+    .tech-pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 4px;
+    }
+    .tech-pill {
+      font-family: var(--font-mono);
+      font-size: 11.5px;
+      background: #F1F5F3;
+      color: var(--dark-green);
+      padding: 2px 7px;
+      border-radius: 4px;
+      border: 1px solid #D6E4DC;
+    }
+    .portfolio-footer-actions {
+      margin-top: auto;
+      padding-top: 14px;
+      border-top: 1px solid var(--card-border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .btn-download-pdf {
+      background: var(--dark-green);
+      color: #FFFFFF;
+      font-size: 12.5px;
+      font-weight: 700;
+      padding: 8px 14px;
+      border-radius: 6px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: 1px solid var(--gold);
+      transition: all 0.2s;
+    }
+    .btn-download-pdf:hover {
+      background: var(--gold);
+      color: var(--dark-green);
+    }
+
+    /* Pricing Section */
+    .pricing-section {
+      padding: 72px 0;
+      background: #FFFFFF;
+    }
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 24px;
+      align-items: stretch;
+    }
+    .pricing-card {
+      background: var(--surface-light);
+      border: 1px solid var(--card-border);
+      border-radius: 14px;
+      padding: 32px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      position: relative;
+    }
+    .pricing-card.featured {
+      background: #FFFFFF;
+      border: 2px solid var(--dark-green);
+      box-shadow: 0 10px 30px rgba(12, 51, 44, 0.1);
+      transform: scale(1.02);
+    }
+    .featured-badge {
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--gold);
+      color: var(--dark-green);
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 3px 12px;
+      border-radius: 99px;
+      box-shadow: 0 2px 8px rgba(201, 162, 77, 0.4);
+    }
+    .pricing-tier-name {
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--dark-green);
+    }
+    .pricing-price {
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--dark-green);
+      line-height: 1.1;
+    }
+    .pricing-price span {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-muted);
+      display: block;
+      margin-top: 4px;
+    }
+    .pricing-features {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-size: 13.5px;
+      color: var(--text-main);
+      padding: 10px 0;
+      border-top: 1px solid var(--card-border);
+      border-bottom: 1px solid var(--card-border);
+    }
+    .pricing-features li {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+    .pricing-features li::before {
+      content: "✔";
+      color: var(--leaf-green);
+      font-weight: bold;
+    }
+    .btn-pricing {
+      margin-top: auto;
+      padding: 12px 18px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 700;
+      text-align: center;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .btn-pricing.outline {
+      border: 1.5px solid var(--dark-green);
+      color: var(--dark-green);
+      background: transparent;
+    }
+    .btn-pricing.outline:hover {
+      background: var(--dark-green);
+      color: #FFFFFF;
+    }
+    .btn-pricing.solid {
+      background: #25D366;
+      color: #000000;
+      border: none;
+      font-weight: 800;
+      box-shadow: 0 4px 12px rgba(37, 211, 102, 0.25);
+    }
+    .btn-pricing.solid:hover {
+      background: #1EBE5D;
+    }
+
+    /* Google Business / Local Profile Section */
+    .local-section {
+      padding: 68px 0;
+      background: linear-gradient(135deg, #0C332C 0%, #15453C 100%);
+      color: #FFFFFF;
+    }
+    .local-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+    .local-info h2 {
+      font-size: 32px;
+      font-weight: 800;
+      line-height: 1.25;
+      margin-bottom: 16px;
+      color: #FFFFFF;
+    }
+    .local-info h2 span {
+      color: var(--gold);
+    }
+    .local-info p {
+      font-size: 16px;
+      color: #D2E4DA;
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+    .business-details-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      font-size: 14.5px;
+      margin-bottom: 28px;
+    }
+    .business-details-list li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: #F0F6F3;
+    }
+    .business-details-list li strong {
+      color: var(--gold);
+      min-width: 120px;
+    }
+    .business-details-list a {
+      color: #FFFFFF;
+      text-decoration: underline;
+    }
+
+    /* Quick Interactive WhatsApp Inquiry Form */
+    .inquiry-card {
+      background: #FFFFFF;
+      color: var(--text-main);
+      border-radius: 14px;
+      padding: 32px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    }
+    .inquiry-card h3 {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--dark-green);
+      margin-bottom: 8px;
+    }
+    .inquiry-card p {
+      font-size: 13.5px;
+      color: var(--text-muted);
+      margin-bottom: 18px;
+    }
+    .form-group {
+      margin-bottom: 14px;
+    }
+    .form-group label {
+      display: block;
+      font-size: 12.5px;
+      font-weight: 700;
+      color: var(--dark-green);
+      margin-bottom: 5px;
+    }
+    .form-control {
+      width: 100%;
+      padding: 10px 14px;
+      border: 1px solid var(--card-border);
+      border-radius: 7px;
+      font-family: var(--font-sans);
+      font-size: 14px;
+      color: var(--text-main);
+      background: var(--surface-light);
+    }
+    .form-control:focus {
+      outline: none;
+      border-color: var(--dark-green);
+      background: #FFFFFF;
+    }
+    .btn-submit-wa {
+      width: 100%;
+      background: #25D366;
+      color: #000000;
+      border: none;
+      padding: 13px;
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: 800;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      transition: background 0.2s;
+    }
+    .btn-submit-wa:hover {
+      background: #1EBE5D;
+    }
+
+    /* Footer */
+    footer.site-footer {
+      background: #071E1A;
+      color: #A0B2AA;
+      padding: 48px 0 32px;
+      font-size: 13.5px;
+      border-top: 1px solid rgba(201, 162, 77, 0.2);
+    }
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      margin-bottom: 20px;
+    }
+    .footer-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .footer-logo {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      border: 1px solid var(--gold);
+    }
+    .footer-brand-title {
+      font-size: 16px;
+      font-weight: 800;
+      color: #FFFFFF;
+      letter-spacing: 0.05em;
+    }
+    .footer-brand-title span {
+      color: var(--gold);
+    }
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 12.5px;
+    }
+
+    /* Floating WhatsApp Button */
+    .floating-wa-btn {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: #25D366;
+      color: #FFFFFF;
+      padding: 12px 20px 12px 16px;
+      border-radius: 999px;
+      box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 14px;
+      z-index: 9999;
+      transition: all 0.25s ease;
+      border: 2px solid #FFFFFF;
+    }
+    .floating-wa-btn:hover {
+      background: #1EBE5D;
+      transform: scale(1.05);
+      box-shadow: 0 10px 28px rgba(37, 211, 102, 0.5);
+    }
+    .wa-icon-svg {
+      width: 24px;
+      height: 24px;
+      fill: #FFFFFF;
+    }
+    .online-indicator {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #FFFFFF;
+      animation: pulse 1.8s infinite;
+    }
+
+    @keyframes pulse {
+      0% { opacity: 0.5; transform: scale(0.9); }
+      50% { opacity: 1; transform: scale(1.2); }
+      100% { opacity: 0.5; transform: scale(0.9); }
+    }
+
+    /* Responsive */
+    @media (max-width: 840px) {
+      .hero-title {
+        font-size: 32px;
+      }
+      .hero-desc {
+        font-size: 16px;
+      }
+      .local-grid {
+        grid-template-columns: 1fr;
+      }
+      .nav-links {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Info Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-left">
+        <span class="top-pill">GOOGLE BUSINESS VERIFIED</span>
+        <span>📍 Osogbo, Osun State, Nigeria</span>
+      </div>
+      <div class="top-bar-right">
+        <a href="https://wa.me/2348149640122?text=Hello%20Amazoe%20Solutions,%20I%20found%20you%20on%20Google%20Business%20and%20would%20like%20to%20inquire%20about%20your%20services." target="_blank">
+          💬 WhatsApp: 0814 964 0122
+        </a>
+        <a href="tel:+2348149640122">📞 Call Us</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="#" class="brand-link">
+        <img src="amazoe-logo.png" alt="Amazoe Solutions Logo" class="brand-logo-img">
+        <div class="brand-text-col">
+          <div class="brand-name">AMAZOE <span>SOLUTIONS</span></div>
+          <div class="brand-tagline">Any solution. Any problem.</div>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Proof of Work</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Google Business / Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="https://wa.me/2348149640122?text=Hello%20Amazoe%20Solutions,%20I%20would%20like%20to%20book%20a%20consultation." target="_blank" class="btn-header-wa">
+        <span>💬</span> Chat With Us
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="badge-location">
+        <span>📍 Osogbo, Osun State · Software & Business Automation</span>
+      </div>
+      <h1 class="hero-title">
+        Stop Losing Customers to <span>Delayed Replies</span> & <em>Inefficient Systems</em>.
+      </h1>
+      <p class="hero-desc">
+        Amazoe Solutions builds high-performance business automations, custom software, and AI workflows that streamline your operations, protect your time, and grow your revenue.
+      </p>
+
+      <div class="hero-actions">
+        <a href="https://wa.me/2348149640122?text=Hello%20Amazoe%20Solutions,%20I'm%20ready%20to%20upgrade%20my%20business%20systems.%20Let's%20talk!" target="_blank" class="btn-primary-wa">
+          <svg class="wa-icon-svg" viewBox="0 0 24 24" style="width:20px; height:20px; fill:#000000;"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.584 1.777.892 2.796.893 3.18 0 5.767-2.587 5.767-5.766.001-3.181-2.585-5.78-5.767-5.78zm3.394 8.211c-.144.405-.837.774-1.17.824-.312.045-.634.053-.996-.062-.259-.083-.591-.219-1.025-.407-1.848-.801-3.053-2.67-3.146-2.793-.092-.124-.752-.998-.752-1.906 0-.907.477-1.353.646-1.537.17-.183.371-.229.495-.229.124 0 .248.001.356.006.115.006.269-.044.421.323.158.381.54 1.319.587 1.415.047.096.079.208.016.333-.062.125-.094.204-.187.312-.093.109-.197.243-.281.326-.094.093-.193.195-.083.383.11.189.489.807 1.049 1.306.721.642 1.329.841 1.517.935.188.093.298.079.409-.048.11-.125.474-.551.6-.74.125-.188.251-.157.422-.094.171.063 1.085.511 1.272.605.187.094.312.141.358.219.047.078.047.453-.097.858z"/></svg>
+          Chat on WhatsApp Now
+        </a>
+        <a href="#portfolio" class="btn-secondary">
+          📂 View Proof of Work
+        </a>
+        <a href="tel:+2348149640122" class="btn-call">
+          📞 0814 964 0122
+        </a>
+      </div>
+
+      <div class="trust-badges">
+        <div class="trust-item"><span class="icon">✔</span> Osogbo, Osun State Base</div>
+        <div class="trust-item"><span class="icon">✔</span> WhatsApp Automation Specialist</div>
+        <div class="trust-item"><span class="icon">✔</span> Production Software Verified</div>
+        <div class="trust-item"><span class="icon">✔</span> Zero Upstream Risk Bleed</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Services -->
+  <section id="services" class="services-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Core Competencies</span>
+        <h2 class="section-title">Engineered Solutions for Modern Businesses</h2>
+        <p class="section-desc">We don't deliver generic templates. We build robust systems tailored to your exact operational bottleneck.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card">
+          <div class="service-icon-box">⚡</div>
+          <h3>Business Systems & Automation</h3>
+          <p>Turn missed calls and late replies into instant closed sales with autonomous WhatsApp AI, intelligent lead qualifiers, and automated booking systems.</p>
+          <ul class="service-points">
+            <li>WhatsApp Business AI auto-responders & lead capture</li>
+            <li>Booking engines for salons, spas, clinics, and shops</li>
+            <li>Automated invoicing, receipts, and order notifications</li>
+            <li>Hands-off inventory and client relationship workflows</li>
+          </ul>
+          <a href="https://wa.me/2348149640122?text=Hello%20Amazoe%20Solutions,%20I'm%20interested%20in%20Business%20Automation%20and%20WhatsApp%20AI." target="_blank" class="card-cta-link">
+            Get Business Automation →
+          </a>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card">
+          <div class="service-icon-box">💻</div>
+          <h3>Software & Web Development</h3>
+          <p>Custom web applications, responsive customer portals, and high-performance algorithms built with modern, ultra-reliable architectures.</p>
+          <ul class="service-points">
+            <li>Algorithmic trading systems & financial state machines</li>
+            <li>Custom full-stack web platforms and interactive desks</li>
+            <li>Cloud APIs, serverless backends, and database pipelines</li>
+            <li>Speed-optimized, mobile-first progressive web apps (PWAs)</li>
+          </ul>
+          <a href="https://wa.me/2348149640122?text=Hello%20Amazoe%20Solutions,%20I%20need%20custom%20software%20or%20web%20development." target="_blank" class="card-cta-link">
+            Build Custom Software →
+          </a>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card">
+          <div class="service-icon-box">📊</div>
+          <h3>Technical Research & Architecture</h3>
+          <p>Clear, mathematically sound technical documentation, systems architecture planning, feasibility proposals, and executive project briefs.</p>
+          <ul class="service-points">
+            <li>System architecture & data flow blueprints</li>
+            <li>Comprehensive project overviews & pitch documentation</li>
+            <li>Code audits, performance profiling, and security checks</li>
+            <li>Executive technical briefs for stakeholders & clients</li>
+          </ul>
+          <a href="https://wa.me/2348149640122?text=Hello%20Amazoe%20Solutions,%20I'd%20like%20technical%20research%20or%20project%20documentation." target="_blank" class="card-cta-link">
+            Request Architecture Brief →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proof of Work / Portfolio -->
+  <section id="portfolio" class="portfolio-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Proof of Work</span>
+        <h2 class="section-title">Real Projects. Verifiable Code.</h2>
+        <p class="section-desc">Review tangible systems built by Amazoe Solutions — from financial algorithms to creator tools and business engines.</p>
+      </div>
+
+      <div class="portfolio-grid">
+        <!-- Project 1: ICT Flux -->
+        <div class="portfolio-card">
+          <span class="portfolio-tag tag-flagship">Flagship Financial System</span>
+          <h3>ICT Flux · Algorithmic Trading Desk</h3>
+          <p>A deterministic, rules-first algorithmic trading engine executing institutional ICT time-and-price market structure models across ~60 markets with hard mathematical risk floors.</p>
+          <div class="tech-pill-row">
+            <span class="tech-pill">Python 3.11+</span>
+            <span class="tech-pill">MetaTrader 5</span>
+            <span class="tech-pill">MT4 Bridge EA</span>
+            <span class="tech-pill">Deriv WebSockets</span>
+            <span class="tech-pill">TradingView Charts</span>
+          </div>
+          <div class="portfolio-footer-actions">
+            <a href="Amazoe-Project-Overview.pdf" download="Amazoe-Project-Overview.pdf" class="btn-download-pdf">
+              📄 Download 2-Page PDF
+            </a>
+            <a href="https://wa.me/2348149640122?text=Hello%20Amazoe%20Solutions,%20I%20saw%20your%20ICT%20Flux%20project%20and%20would%20like%20to%20discuss%20it." target="_blank" style="font-size:13px; font-weight:700; color:var(--dark-green); text-decoration:none;">
+              Discuss System →
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2: WhatsApp AI Automation -->
+        <div class="portfolio-card">
+          <span class="portfolio-tag tag-ops">Business Automation</span>
+          <h3>WhatsApp Business AI Conversationalist</h3>
+          <p>Trained autonomous customer engagement agents that handle store inquiries, quote services, qualify prospects, and book appointments 24/7 directly on WhatsApp.</p>
+          <div class="tech-pill-row">
+            <span class="tech-pill">WhatsApp Cloud API</span>
+            <span class="tech-pill">n8n / Webhooks</span>
+            <span class="tech-pill">Natural Language AI</span>
+            <span class="tech-pill">Zero Monthly Fees</span>
+          </div>
+          <div class="portfolio-footer-actions">
+            <span style="font-size:12px; color:var(--text-muted); font-weight:600;">Active in Nigerian Markets</span>
+            <a href="https://wa.me/2348149640122?text=Hello%20Amazoe%20Solutions,%20I%20want%20the%20WhatsApp%20AI%20system%20for%20my%20business." target="_blank" style="font-size:13px; font-weight:700; color:var(--dark-green); text-decoration:none;">
+              Get Started →
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3: ToonForge -->
+        <div class="portfolio-card">
+          <span class="portfolio-tag tag-saas">Creator Cloud Platform</span>
+          <h3>ToonForge · 3D Cloud Animation Studio</h3>
+          <p>In-browser 3D animation and asset rigging pipeline empowering digital creators with distributed cloud rendering without requiring costly local GPU hardware.</p>
+          <div class="tech-pill-row">
+            <span class="tech-pill">Three.js</span>
+            <span class="tech-pill">WebGL</span>
+            <span class="tech-pill">Vercel Serverless</span>
+            <span class="tech-pill">Cloud GPU Pipeline</span>
+          </div>
+          <div class="portfolio-footer-actions">
+            <span style="font-size:12px; color:var(--text-muted); font-weight:600;">Interactive Web Graphics</span>
+            <a href="https://wa.me/2348149640122?text=Hello%20Amazoe%20Solutions,%20tell%20me%20more%20about%20your%20SaaS%20development%20capabilities." target="_blank" style="font-size:13px; font-weight:700; color:var(--dark-green); text-decoration:none;">
+              Inquire →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing & Service Packages -->
+  <section id="pricing" class="pricing-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Transparent Pricing</span>
+        <h2 class="section-title">Clear, Predictable Investment</h2>
+        <p class="section-desc">No hidden monthly charges for baseline setups. Pick the right package for your business stage.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Tier 1 -->
+        <div class="pricing-card">
+          <div class="pricing-tier-name">Blueprint Tier</div>
+          <div class="pricing-price">₦15k – ₦20k <span>One-time setup</span></div>
+          <p style="font-size:13.5px; color:var(--text-muted);">Ideal for solopreneurs, boutique vendors, and small stores starting out.</p>
+          <ul class="pricing-features">
+            <li>Complete business knowledge blueprint</li>
+            <li>Custom brand tone & honorifics engineered</li>
+            <li>Standard FAQ & objection triggers</li>
+            <li>Self-activation instruction guide</li>
+          </ul>
+          <a href="https://wa.me/2348149640122?text=Hello%20Amazoe%20Solutions,%20I%20want%20to%20order%20the%20Blueprint%20Tier." target="_blank" class="btn-pricing outline">
+            Get Blueprint
+          </a>
+        </div>
+
+        <!-- Tier 2 (Featured) -->
+        <div class="pricing-card featured">
+          <div class="featured-badge">★ Most Popular</div>
+          <div class="pricing-tier-name">Full Turnkey Setup</div>
+          <div class="pricing-price">₦35k – ₦50k <span>One-time · Zero recurring fees</span></div>
+          <p style="font-size:13.5px; color:var(--text-muted);">Complete done-for-you automation for salons, spas, clinics, and retail stores.</p>
+          <ul class="pricing-features">
+            <li><strong>Everything in Blueprint, plus:</strong></li>
+            <li>We configure all AI & business settings for you</li>
+            <li>Smart human-handoff & reactivation rules</li>
+            <li>Live operational stress-test before delivery</li>
+            <li>15-minute staff operational training</li>
+          </ul>
+          <a href="https://wa.me/2348149640122?text=Hello%20Amazoe%20Solutions,%20I%20want%20the%20Full%20Turnkey%20Setup%20(Tier%202)." target="_blank" class="btn-pricing solid">
+            Get Full Setup on WhatsApp
+          </a>
+        </div>
+
+        <!-- Tier 3 -->
+        <div class="pricing-card">
+          <div class="pricing-tier-name">Enterprise / Custom Software</div>
+          <div class="pricing-price">₦150k+ <span>Custom tailored scope</span></div>
+          <p style="font-size:13.5px; color:var(--text-muted);">For trading firms, SaaS platforms, and businesses needing dedicated custom code.</p>
+          <ul class="pricing-features">
+            <li>Custom full-stack web applications & portals</li>
+            <li>Algorithmic trading systems & execution bridges</li>
+            <li>Multi-channel n8n / Make integration</li>
+            <li>Full code repository & deployment documentation</li>
+          </ul>
+          <a href="https://wa.me/2348149640122?text=Hello%20Amazoe%20Solutions,%20I%20need%20a%20custom%20software%20or%20enterprise%20build." target="_blank" class="btn-pricing outline">
+            Request Scope & Quote
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Google Business & Local Contact Section -->
+  <section id="contact" class="local-section">
+    <div class="container local-grid">
+      <div class="local-info">
+        <h2>Find Us in <span>Osogbo</span>. Connect With Us Anywhere.</h2>
+        <p>
+          Whether you are a business owner in Osun State looking to automate your daily customer conversations or an international client seeking quantitative software engineering, we are ready to build.
+        </p>
+
+        <ul class="business-details-list">
+          <li><strong>📍 Location:</strong> Osogbo, Osun State, Nigeria</li>
+          <li><strong>🕒 Working Hours:</strong> Mon – Sat: 8:00 AM – 7:00 PM (WAT)</li>
+          <li><strong>💬 WhatsApp:</strong> <a href="https://wa.me/2348149640122?text=Hello%20Amazoe%20Solutions,%20I'm%20reaching%20out%20via%20your%20website." target="_blank">0814 964 0122</a></li>
+          <li><strong>📞 Direct Phone:</strong> <a href="tel:+2348149640122">0814 964 0122</a></li>
+          <li><strong>⚡ Tagline:</strong> <em>"Any solution. Any problem."</em></li>
+        </ul>
+
+        <div style="display:flex; gap:12px; flex-wrap:wrap;">
+          <a href="https://wa.me/2348149640122?text=Hello%20Amazoe%20Solutions,%20let's%20connect%20on%20WhatsApp!" target="_blank" class="btn-primary-wa">
+            💬 Open WhatsApp Chat
+          </a>
+          <a href="tel:+2348149640122" class="btn-call" style="background:transparent; color:#FFFFFF; border-color:var(--gold);">
+            📞 Call Directly
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Inquiry Form that forwards directly to WhatsApp -->
+      <div class="inquiry-card">
+        <h3>Quick Consultation Inquiry</h3>
+        <p>Fill out the quick form below to launch a pre-formatted chat with our lead engineer on WhatsApp.</p>
+
+        <form id="waForm" onsubmit="handleInquiry(event)">
+          <div class="form-group">
+            <label for="clientName">Your Name / Business Name *</label>
+            <input type="text" id="clientName" class="form-control" placeholder="e.g. Adebayo / Luxe Salon Osogbo" required>
+          </div>
+
+          <div class="form-group">
+            <label for="serviceType">Service Needed *</label>
+            <select id="serviceType" class="form-control" required>
+              <option value="WhatsApp Business AI Automation">WhatsApp Business AI Automation (₦35k–₦50k)</option>
+              <option value="Custom Software Development">Custom Software / Web Application</option>
+              <option value="Algorithmic Trading System">Algorithmic Trading / Quantitative Engine</option>
+              <option value="Business Booking / POS System">Business Booking & POS System</option>
+              <option value="Technical Documentation / Blueprint">Technical Architecture / Blueprint</option>
+              <option value="General Consultation">Other / General Consultation</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="projectDetails">Brief Description / Goal</label>
+            <textarea id="projectDetails" class="form-control" rows="3" placeholder="Tell us briefly what problem you need solved..."></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit-wa">
+            <span>💬</span> Send Directly to WhatsApp
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-left">
+          <img src="amazoe-logo.png" alt="Amazoe Solutions Logo" class="footer-logo">
+          <div>
+            <div class="footer-brand-title">AMAZOE <span>SOLUTIONS</span></div>
+            <div style="font-size:12px; font-style:italic;">Any solution. Any problem.</div>
+          </div>
+        </div>
+
+        <div>
+          <a href="https://wa.me/2348149640122?text=Hello%20Amazoe%20Solutions" target="_blank" style="color:var(--gold); font-weight:700; text-decoration:none;">
+            WhatsApp: 0814 964 0122
+          </a>
+          <span style="margin: 0 10px; color:rgba(255,255,255,0.2);">|</span>
+          <span>Osogbo, Osun State, Nigeria</span>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Amazoe Solutions. All rights reserved.</div>
+        <div>Engineered for high performance, business reliability, and maximum ROI.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky Floating WhatsApp Action Button -->
+  <a href="https://wa.me/2348149640122?text=Hello%20Amazoe%20Solutions,%20I'm%20visiting%20your%20website%20and%20would%20like%20to%20chat!" target="_blank" class="floating-wa-btn" aria-label="Chat on WhatsApp">
+    <div class="online-indicator"></div>
+    <svg class="wa-icon-svg" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.584 1.777.892 2.796.893 3.18 0 5.767-2.587 5.767-5.766.001-3.181-2.585-5.78-5.767-5.78zm3.394 8.211c-.144.405-.837.774-1.17.824-.312.045-.634.053-.996-.062-.259-.083-.591-.219-1.025-.407-1.848-.801-3.053-2.67-3.146-2.793-.092-.124-.752-.998-.752-1.906 0-.907.477-1.353.646-1.537.17-.183.371-.229.495-.229.124 0 .248.001.356.006.115.006.269-.044.421.323.158.381.54 1.319.587 1.415.047.096.079.208.016.333-.062.125-.094.204-.187.312-.093.109-.197.243-.281.326-.094.093-.193.195-.083.383.11.189.489.807 1.049 1.306.721.642 1.329.841 1.517.935.188.093.298.079.409-.048.11-.125.474-.551.6-.74.125-.188.251-.157.422-.094.171.063 1.085.511 1.272.605.187.094.312.141.358.219.047.078.047.453-.097.858z"/></svg>
+    <span>Chat with Us</span>
+  </a>
+
+  <!-- Script to format and route the inquiry directly to WhatsApp -->
+  <script>
+    function handleInquiry(e) {
+      e.preventDefault();
+      var name = document.getElementById('clientName').value.trim();
+      var service = document.getElementById('serviceType').value;
+      var details = document.getElementById('projectDetails').value.trim();
+
+      var msg = "Hello Amazoe Solutions! My name is *" + name + "*.\n\n" +
+                "I am inquiring about: *" + service + "*.\n";
+      
+      if (details) {
+        msg += "Project details: " + details + "\n";
+      }
+      msg += "\nI found you on your website / Google Business Profile.";
+
+      var waUrl = "https://wa.me/2348149640122?text=" + encodeURIComponent(msg);
+      window.open(waUrl, '_blank');
+    }
+  </script>
+</body>
+</html>
