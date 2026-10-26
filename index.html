@@ -492,6 +492,131 @@
       color: #1E5BA8;
       border: 1px solid #B4D5F8;
     }
+    .tag-hospitality {
+      background: #FEF3C7;
+      color: #92400E;
+      border: 1px solid #FCD34D;
+    }
+    .tag-edtech {
+      background: #E0E7FF;
+      color: #3730A3;
+      border: 1px solid #C7D2FE;
+    }
+    .tag-commerce {
+      background: #FCE7F3;
+      color: #9D174D;
+      border: 1px solid #FBCFE8;
+    }
+    .portfolio-filter-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+      margin: 28px 0 36px 0;
+    }
+    .filter-btn {
+      padding: 8px 18px;
+      border-radius: 99px;
+      font-size: 13px;
+      font-weight: 700;
+      border: 1px solid var(--card-border);
+      background: #FFFFFF;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .filter-btn:hover, .filter-btn.active {
+      background: var(--dark-green);
+      color: #FFFFFF;
+      border-color: var(--dark-green);
+    }
+    .portfolio-action-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+    .btn-live-link {
+      background: #059669;
+      color: #FFFFFF;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 6px 12px;
+      border-radius: 6px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      transition: all 0.2s;
+    }
+    .btn-live-link:hover {
+      background: #047857;
+      color: #FFFFFF;
+    }
+    .btn-github-link {
+      background: #F8FAFC;
+      color: #334155;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 6px 10px;
+      border-radius: 6px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      border: 1px solid #CBD5E1;
+      font-family: var(--font-mono);
+      transition: all 0.2s;
+    }
+    .btn-github-link:hover {
+      background: #0F172A;
+      color: #FFFFFF;
+      border-color: #0F172A;
+    }
+    .github-banner {
+      margin-top: 48px;
+      background: linear-gradient(135deg, #0C332C 0%, #07221D 100%);
+      border-radius: 16px;
+      padding: 32px 36px;
+      color: #FFFFFF;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      border: 1px solid rgba(201, 162, 77, 0.4);
+      box-shadow: 0 12px 36px rgba(12, 51, 44, 0.2);
+    }
+    .github-banner h3 {
+      font-size: 20px;
+      font-weight: 800;
+      color: #FFFFFF;
+      margin-bottom: 6px;
+    }
+    .github-banner p {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.8);
+      max-width: 620px;
+      line-height: 1.5;
+    }
+    .btn-github-banner {
+      background: var(--gold);
+      color: var(--dark-green);
+      font-size: 14px;
+      font-weight: 800;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s;
+      white-space: nowrap;
+    }
+    .btn-github-banner:hover {
+      background: #FFFFFF;
+      color: var(--dark-green);
+    }
     .portfolio-card h3 {
       font-size: 19px;
       font-weight: 800;
@@ -912,7 +1037,8 @@
           <li><a href="#services">Services</a></li>
           <li><a href="#portfolio">Proof of Work</a></li>
           <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#contact">Google Business / Contact</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="https://github.com/Olumidenana" target="_blank" style="display:inline-flex; align-items:center; gap:5px; font-weight:700; color:var(--dark-green);"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg> GitHub</a></li>
         </ul>
       </nav>
 
@@ -1022,17 +1148,55 @@
   <section id="portfolio" class="portfolio-section">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">Proof of Work</span>
+        <span class="section-tag">Proof of Work & Production Repos</span>
         <h2 class="section-title">Real Projects. Verifiable Code.</h2>
-        <p class="section-desc">Review tangible systems built by Amazoe Solutions — from financial algorithms to creator tools and business engines.</p>
+        <p class="section-desc">Review high-impact systems engineered and deployed by Amazoe Solutions — spanning enterprise hospitality, algorithmic finance, institutional EdTech, QSR logistics, and creator cloud platforms.</p>
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div class="portfolio-filter-row">
+        <button class="filter-btn active" onclick="filterPortfolio('all', this)">All Systems (10)</button>
+        <button class="filter-btn" onclick="filterPortfolio('hospitality', this)">Hospitality & Cinema</button>
+        <button class="filter-btn" onclick="filterPortfolio('fintech', this)">FinTech & Trading</button>
+        <button class="filter-btn" onclick="filterPortfolio('edtech', this)">EdTech & Portals</button>
+        <button class="filter-btn" onclick="filterPortfolio('commerce', this)">E-Commerce & Food</button>
+        <button class="filter-btn" onclick="filterPortfolio('saas', this)">Cloud SaaS & AI</button>
       </div>
 
       <div class="portfolio-grid">
-        <!-- Project 1: ICT Flux -->
-        <div class="portfolio-card">
+        <!-- Project 1: Ojaja Cinemas -->
+        <div class="portfolio-card" data-category="hospitality enterprise flagship">
+          <span class="portfolio-tag tag-flagship tag-hospitality">Enterprise Cinema & Hospitality</span>
+          <h3>Ojaja Cinemas · Luxury Booking & Turnstile Dispatch Engine</h3>
+          <p>High-conversion digital box office built for the premier cinema at Ife Grand Resort. Features Netflix-grade background video trailer streaming, 1-click Dolby audio toggle, visual auditorium seat reservations, multi-channel Nigerian payments (Transfer, USSD, Card), automated WhatsApp gate passes, and an offline-resilient turnstile QR scanner.</p>
+          <div class="tech-pill-row">
+            <span class="tech-pill">Vercel Edge</span>
+            <span class="tech-pill">HTML5 Video Stream</span>
+            <span class="tech-pill">Paystack Gateway</span>
+            <span class="tech-pill">Tamper-Proof QR</span>
+            <span class="tech-pill">Turnstile Console (Alt+A)</span>
+            <span class="tech-pill">Web Audio API</span>
+          </div>
+          <div class="portfolio-footer-actions">
+            <a href="Ojaja_Cinemas_12_Hour_Upgrade_Brief.pdf" download="Ojaja_Cinemas_12_Hour_Upgrade_Brief.pdf" class="btn-download-pdf">
+              📄 Download 2-Page PDF
+            </a>
+            <div class="portfolio-action-group">
+              <a href="https://ojaja-cinemas-omega.vercel.app/" target="_blank" class="btn-live-link">
+                🚀 Live Demo →
+              </a>
+              <a href="https://github.com/Olumidenana/ojaja-cinemas" target="_blank" class="btn-github-link">
+                GitHub ↗
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: ICT Flux -->
+        <div class="portfolio-card" data-category="fintech flagship">
           <span class="portfolio-tag tag-flagship">Flagship Financial System</span>
-          <h3>ICT Flux · Algorithmic Trading Desk</h3>
-          <p>A deterministic, rules-first algorithmic trading engine executing institutional ICT time-and-price market structure models across ~60 markets with hard mathematical risk floors.</p>
+          <h3>ICT Flux · Algorithmic Trading Suite</h3>
+          <p>A deterministic, rules-first algorithmic trading engine executing institutional ICT time-and-price market structure models across ~60 markets with hard mathematical risk floors, live WebSockets, and MT5/MT4 execution bridges.</p>
           <div class="tech-pill-row">
             <span class="tech-pill">Python 3.11+</span>
             <span class="tech-pill">MetaTrader 5</span>
@@ -1044,33 +1208,140 @@
             <a href="Amazoe-Project-Overview.pdf" download="Amazoe-Project-Overview.pdf" class="btn-download-pdf">
               📄 Download 2-Page PDF
             </a>
-            <a href="https://wa.me/2348149640122?text=Hello%20Amazoe%20Solutions,%20I%20saw%20your%20ICT%20Flux%20project%20and%20would%20like%20to%20discuss%20it." target="_blank" style="font-size:13px; font-weight:700; color:var(--dark-green); text-decoration:none;">
-              Discuss System →
-            </a>
+            <div class="portfolio-action-group">
+              <a href="https://ict-trader-8p1gs4svg-amazoe.vercel.app/" target="_blank" class="btn-live-link">
+                🚀 Live Demo →
+              </a>
+              <a href="https://github.com/Olumidenana/ict-trader" target="_blank" class="btn-github-link">
+                GitHub ↗
+              </a>
+            </div>
           </div>
         </div>
 
-        <!-- Project 2: WhatsApp AI Automation -->
-        <div class="portfolio-card">
-          <span class="portfolio-tag tag-ops">Business Automation</span>
-          <h3>WhatsApp Business AI Conversationalist</h3>
-          <p>Trained autonomous customer engagement agents that handle store inquiries, quote services, qualify prospects, and book appointments 24/7 directly on WhatsApp.</p>
+        <!-- Project 3: School Portal OS -->
+        <div class="portfolio-card" data-category="edtech enterprise">
+          <span class="portfolio-tag tag-edtech">Institutional EdTech & OS</span>
+          <h3>School Portal OS · Academic & Revenue Engine</h3>
+          <p>Comprehensive web operating system for Nigerian private institutions: end-to-end student admissions, dynamic fee ledger with automated Paystack verification, cryptographic report card generator, and instant WhatsApp parent notifications.</p>
           <div class="tech-pill-row">
-            <span class="tech-pill">WhatsApp Cloud API</span>
-            <span class="tech-pill">n8n / Webhooks</span>
-            <span class="tech-pill">Natural Language AI</span>
-            <span class="tech-pill">Zero Monthly Fees</span>
+            <span class="tech-pill">Next.js / TypeScript</span>
+            <span class="tech-pill">Paystack Invoicing</span>
+            <span class="tech-pill">TailwindCSS</span>
+            <span class="tech-pill">PDF Report Engine</span>
+            <span class="tech-pill">Role-Based Access</span>
           </div>
           <div class="portfolio-footer-actions">
-            <span style="font-size:12px; color:var(--text-muted); font-weight:600;">Active in Nigerian Markets</span>
-            <a href="https://wa.me/2348149640122?text=Hello%20Amazoe%20Solutions,%20I%20want%20the%20WhatsApp%20AI%20system%20for%20my%20business." target="_blank" style="font-size:13px; font-weight:700; color:var(--dark-green); text-decoration:none;">
-              Get Started →
-            </a>
+            <span style="font-size:12px; color:var(--text-muted); font-weight:600;">Active Nigerian School OS</span>
+            <div class="portfolio-action-group">
+              <a href="https://school-portal-os.vercel.app" target="_blank" class="btn-live-link">
+                🚀 Live Demo →
+              </a>
+              <a href="https://github.com/Olumidenana/school-portal-os" target="_blank" class="btn-github-link">
+                GitHub ↗
+              </a>
+            </div>
           </div>
         </div>
 
-        <!-- Project 3: ToonForge -->
-        <div class="portfolio-card">
+        <!-- Project 4: Chopos Food Vendor Ordering -->
+        <div class="portfolio-card" data-category="commerce food">
+          <span class="portfolio-tag tag-commerce">QSR & Food Logistics</span>
+          <h3>Chopos · Food Ordering & Logistics Relay</h3>
+          <p>High-velocity food delivery platform tailored for Nigerian restaurant hubs and campus markets with zero-effort menu management, automated rider WhatsApp dispatch relay, and sub-10s mobile checkout with split merchant settlements.</p>
+          <div class="tech-pill-row">
+            <span class="tech-pill">React / Vite</span>
+            <span class="tech-pill">Paystack Split Settlement</span>
+            <span class="tech-pill">WhatsApp Order Relay</span>
+            <span class="tech-pill">Real-Time Cart Engine</span>
+          </div>
+          <div class="portfolio-footer-actions">
+            <span style="font-size:12px; color:var(--text-muted); font-weight:600;">Sub-10s Mobile Ordering</span>
+            <div class="portfolio-action-group">
+              <a href="https://food-vendor-ordering.vercel.app" target="_blank" class="btn-live-link">
+                🚀 Live Demo →
+              </a>
+              <a href="https://github.com/Olumidenana/food-vendor-ordering" target="_blank" class="btn-github-link">
+                GitHub ↗
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Luxe Glow Skincare -->
+        <div class="portfolio-card" data-category="commerce">
+          <span class="portfolio-tag tag-commerce">E-Commerce & Retail</span>
+          <h3>Luxe Glow · Skincare E-Commerce & Diagnostic Flow</h3>
+          <p>Premium direct-to-consumer digital storefront with interactive dermatological skin-type quiz, personalized product bundle recommendations, and seamless local currency checkout.</p>
+          <div class="tech-pill-row">
+            <span class="tech-pill">Modern Frontend</span>
+            <span class="tech-pill">Diagnostic Quiz Engine</span>
+            <span class="tech-pill">Paystack Inline</span>
+            <span class="tech-pill">Luxury UI/UX</span>
+          </div>
+          <div class="portfolio-footer-actions">
+            <span style="font-size:12px; color:var(--text-muted); font-weight:600;">Interactive Commerce</span>
+            <div class="portfolio-action-group">
+              <a href="https://skincare-brand-store.vercel.app" target="_blank" class="btn-live-link">
+                🚀 Live Demo →
+              </a>
+              <a href="https://github.com/Olumidenana/skincare-brand-store" target="_blank" class="btn-github-link">
+                GitHub ↗
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: Luxe Salon -->
+        <div class="portfolio-card" data-category="commerce hospitality">
+          <span class="portfolio-tag tag-ops">Service & Appointment Engine</span>
+          <h3>Luxe Salon · Real-Time Stylist & Service Booking</h3>
+          <p>Streamlined booking platform for wellness studios and salons. Real-time calendar availability, service tier customization, stylist seat selection, and automated SMS/WhatsApp calendar sync.</p>
+          <div class="tech-pill-row">
+            <span class="tech-pill">Interactive Scheduling</span>
+            <span class="tech-pill">Calendar Sync</span>
+            <span class="tech-pill">Paystack Deposit Lock</span>
+            <span class="tech-pill">Mobile-Optimized</span>
+          </div>
+          <div class="portfolio-footer-actions">
+            <span style="font-size:12px; color:var(--text-muted); font-weight:600;">Automated Scheduling</span>
+            <div class="portfolio-action-group">
+              <a href="https://beauty-salon-booking.vercel.app" target="_blank" class="btn-live-link">
+                🚀 Live Demo →
+              </a>
+              <a href="https://github.com/Olumidenana/beauty-salon-booking" target="_blank" class="btn-github-link">
+                GitHub ↗
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 7: Video Assembler SaaS -->
+        <div class="portfolio-card" data-category="saas cloud">
+          <span class="portfolio-tag tag-saas">Cloud Media Automation</span>
+          <h3>Video Assembler SaaS · Anti-Timeout Rendering Engine</h3>
+          <p>Cloud microservice architecture for assembling, stitching, dynamic caption burning, and publishing short-form video reels without serverless execution timeouts.</p>
+          <div class="tech-pill-row">
+            <span class="tech-pill">Node.js Serverless</span>
+            <span class="tech-pill">FFmpeg Edge Pipeline</span>
+            <span class="tech-pill">YouTube Data API v3</span>
+            <span class="tech-pill">Chunked Rendering</span>
+          </div>
+          <div class="portfolio-footer-actions">
+            <span style="font-size:12px; color:var(--text-muted); font-weight:600;">Serverless Media Worker</span>
+            <div class="portfolio-action-group">
+              <a href="https://video-assembler-saas.vercel.app" target="_blank" class="btn-live-link">
+                🚀 Live Demo →
+              </a>
+              <a href="https://github.com/olumidenana/video-assembler-saas" target="_blank" class="btn-github-link">
+                GitHub ↗
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 8: ToonForge -->
+        <div class="portfolio-card" data-category="saas cloud">
           <span class="portfolio-tag tag-saas">Creator Cloud Platform</span>
           <h3>ToonForge · 3D Cloud Animation Studio</h3>
           <p>In-browser 3D animation and asset rigging pipeline empowering digital creators with distributed cloud rendering without requiring costly local GPU hardware.</p>
@@ -1082,11 +1353,71 @@
           </div>
           <div class="portfolio-footer-actions">
             <span style="font-size:12px; color:var(--text-muted); font-weight:600;">Interactive Web Graphics</span>
-            <a href="https://wa.me/2348149640122?text=Hello%20Amazoe%20Solutions,%20tell%20me%20more%20about%20your%20SaaS%20development%20capabilities." target="_blank" style="font-size:13px; font-weight:700; color:var(--dark-green); text-decoration:none;">
-              Inquire →
+            <div class="portfolio-action-group">
+              <a href="https://toonforge-iptkuwed2-amazoe.vercel.app" target="_blank" class="btn-live-link">
+                🚀 Live Demo →
+              </a>
+              <a href="https://github.com/Olumidenana/toonforge" target="_blank" class="btn-github-link">
+                GitHub ↗
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 9: Motion OAU -->
+        <div class="portfolio-card" data-category="edtech enterprise">
+          <span class="portfolio-tag tag-edtech">Campus Community & Ticketing</span>
+          <h3>Motion OAU · Student Hub & Event Ticketing</h3>
+          <p>Campus-wide event aggregation and ticketing system for Obafemi Awolowo University community, handling high-traffic surges during departmental galas and cultural festivals.</p>
+          <div class="tech-pill-row">
+            <span class="tech-pill">High-Concurrency Web</span>
+            <span class="tech-pill">QR Gate Verification</span>
+            <span class="tech-pill">Paystack Gateway</span>
+            <span class="tech-pill">Student ID Auth</span>
+          </div>
+          <div class="portfolio-footer-actions">
+            <span style="font-size:12px; color:var(--text-muted); font-weight:600;">Campus Ticketing Engine</span>
+            <div class="portfolio-action-group">
+              <a href="https://motion-oau.vercel.app" target="_blank" class="btn-live-link">
+                🚀 Live Demo →
+              </a>
+              <a href="https://github.com/Olumidenana/motion-oau" target="_blank" class="btn-github-link">
+                GitHub ↗
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 10: WhatsApp AI Automation -->
+        <div class="portfolio-card" data-category="saas ops">
+          <span class="portfolio-tag tag-ops">Business Automation</span>
+          <h3>WhatsApp Business AI Conversationalist</h3>
+          <p>Trained autonomous customer engagement agents that handle store inquiries, quote services, qualify prospects, and book appointments 24/7 directly on WhatsApp with zero monthly recurring SaaS fees.</p>
+          <div class="tech-pill-row">
+            <span class="tech-pill">WhatsApp Cloud API</span>
+            <span class="tech-pill">n8n / Webhooks</span>
+            <span class="tech-pill">Natural Language AI</span>
+            <span class="tech-pill">Autonomous Sales Bot</span>
+          </div>
+          <div class="portfolio-footer-actions">
+            <span style="font-size:12px; color:var(--text-muted); font-weight:600;">Active in Nigerian Markets</span>
+            <a href="https://wa.me/2348149640122?text=Hello%20Amazoe%20Solutions,%20I%20want%20the%20WhatsApp%20AI%20system%20for%20my%20business." target="_blank" class="btn-live-link" style="background:var(--dark-green);">
+              Get Started →
             </a>
           </div>
         </div>
+      </div>
+
+      <!-- GitHub Repositories Showcase Banner -->
+      <div class="github-banner">
+        <div>
+          <h3>Explore Full Source Code & Architectures on GitHub</h3>
+          <p>Every system engineered by Amazoe Solutions adheres to modern standards: clean modular architecture, full test coverage, robust error boundaries, and production-grade Nigerian payment integrations. Inspect our 17+ public and private repositories.</p>
+        </div>
+        <a href="https://github.com/Olumidenana" target="_blank" class="btn-github-banner">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          Visit GitHub Profile (Olumidenana) →
+        </a>
       </div>
     </div>
   </section>
@@ -1252,8 +1583,26 @@
     <span>Chat with Us</span>
   </a>
 
-  <!-- Script to format and route the inquiry directly to WhatsApp -->
+  <!-- Script to format and route the inquiry directly to WhatsApp & Portfolio Filter -->
   <script>
+    function filterPortfolio(category, btn) {
+      var buttons = document.querySelectorAll('.filter-btn');
+      buttons.forEach(function(b) {
+        b.classList.remove('active');
+      });
+      if (btn) btn.classList.add('active');
+
+      var cards = document.querySelectorAll('.portfolio-card');
+      cards.forEach(function(card) {
+        var cardCat = card.getAttribute('data-category') || '';
+        if (category === 'all' || cardCat.indexOf(category) !== -1) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
     function handleInquiry(e) {
       e.preventDefault();
       var name = document.getElementById('clientName').value.trim();

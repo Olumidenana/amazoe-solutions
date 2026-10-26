@@ -24,10 +24,18 @@ It serves as the central digital proof of work for clients seeking:
   - One-click floating chat button with live status indicator.
   - Interactive on-page inquiry generator that formats client name, service, and project details directly into WhatsApp chats.
   - Pre-configured WhatsApp deep links with tailored greetings for Google Business visitors.
-- **Proof of Work & Portfolio Showcase:**
-  - **ICT Flux Algorithmic Trading Desk:** Codified institutional trading engine with downloadable 2-page project brief (`Amazoe-Project-Overview.pdf`).
-  - **WhatsApp AI Automation:** 24/7 client response bots with zero recurring subscription fees.
-  - **ToonForge 3D Cloud Animation:** In-browser 3D WebGL rendering pipeline for digital creators.
+- **Proof of Work & Portfolio Showcase (10 Production Systems):**
+  - **Ojaja Cinemas Luxury Booking & Turnstile Engine:** Enterprise cinema booking portal for Ife Grand Resort with Netflix-grade video trailer stream, 1-click Dolby audio toggle, Paystack transfer/USSD/card checkout, automated WhatsApp tickets, and offline-resilient QR turnstile scanner. ([Live Demo](https://ojaja-cinemas-omega.vercel.app/) · [GitHub](https://github.com/Olumidenana/ojaja-cinemas) · [2-Page Brief PDF](Ojaja_Cinemas_12_Hour_Upgrade_Brief.pdf))
+  - **ICT Flux Algorithmic Trading Desk:** Codified institutional trading engine executing ICT time-and-price models with MT5/Deriv WebSockets. ([Live Demo](https://ict-trader-8p1gs4svg-amazoe.vercel.app/) · [GitHub](https://github.com/Olumidenana/ict-trader) · [2-Page Brief PDF](Amazoe-Project-Overview.pdf))
+  - **School Portal OS:** Academic and revenue management operating system for Nigerian private institutions with automated Paystack invoicing and WhatsApp grade dispatch. ([Live Demo](https://school-portal-os.vercel.app) · [GitHub](https://github.com/Olumidenana/school-portal-os))
+  - **Chopos / Food Vendor Ordering Engine:** High-velocity food ordering platform tailored for Nigerian restaurant hubs and campus markets with automated WhatsApp rider dispatch relay. ([Live Demo](https://food-vendor-ordering.vercel.app) · [GitHub](https://github.com/Olumidenana/food-vendor-ordering))
+  - **Luxe Glow Skincare Store:** D2C luxury cosmetics storefront with interactive dermatological skin-type diagnostic quiz and direct Paystack checkout. ([Live Demo](https://skincare-brand-store.vercel.app) · [GitHub](https://github.com/Olumidenana/skincare-brand-store))
+  - **Luxe Salon Booking Engine:** Real-time wellness studio booking engine with stylist seat allocator and calendar sync. ([Live Demo](https://beauty-salon-booking.vercel.app) · [GitHub](https://github.com/Olumidenana/beauty-salon-booking))
+  - **Video Assembler SaaS:** Serverless cloud video assembling, stitching, and caption-burning microservice with zero execution timeouts. ([Live Demo](https://video-assembler-saas.vercel.app) · [GitHub](https://github.com/olumidenana/video-assembler-saas))
+  - **ToonForge 3D Cloud Animation:** In-browser 3D WebGL rendering pipeline for digital creators without requiring local GPU hardware. ([Live Demo](https://toonforge-iptkuwed2-amazoe.vercel.app) · [GitHub](https://github.com/Olumidenana/toonforge))
+  - **Motion OAU Campus Platform:** High-concurrency event ticketing and student community portal for Obafemi Awolowo University. ([Live Demo](https://motion-oau.vercel.app) · [GitHub](https://github.com/Olumidenana/motion-oau))
+  - **WhatsApp AI Business Conversationalist:** Autonomous customer service and sales agent operating 24/7 on WhatsApp Cloud API with zero recurring fees.
+  - **Full Public Repositories:** [https://github.com/Olumidenana](https://github.com/Olumidenana) (17+ Repositories)
 - **Google Business Profile Ready:**
   - Semantic HTML5 metadata, local SEO keywords (Osogbo, Osun State, Nigeria).
   - Business hours, physical service region, and click-to-call integration (`tel:+2348149640122`).
